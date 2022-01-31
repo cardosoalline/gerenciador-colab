@@ -1,56 +1,16 @@
 package com.company;
 
-public class Vendedor {
-
-    private String nome;
-    private String documento;
+public class Vendedor extends FuncionarioCLT{
 
 
-    private Endereco Endereco;
-
-    private Double valorSalario;
     private Double valorBonificacao;
 
     public Vendedor() {
+
     }
 
     public Vendedor(String nome, String documento, com.company.Endereco endereco, Double valorSalario) {
-        this.nome = nome;
-        this.documento = documento;
-        Endereco = endereco;
-        this.valorSalario = valorSalario;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getDocumento() {
-        return documento;
-    }
-
-    public void setDocumento(String documento) {
-        this.documento = documento;
-    }
-
-    public com.company.Endereco getEndereco() {
-        return Endereco;
-    }
-
-    public void setEndereco(com.company.Endereco endereco) {
-        Endereco = endereco;
-    }
-
-    public Double getValorSalario() {
-        return valorSalario;
-    }
-
-    public void setValorSalario(Double valorSalario) {
-        this.valorSalario = valorSalario;
+        super(nome, documento, endereco, valorSalario);
     }
 
     public Double getValorBonificacao() {
@@ -59,5 +19,17 @@ public class Vendedor {
 
     public void setValorBonificacao(Double valorBonificacao) {
         this.valorBonificacao = valorBonificacao;
+    }
+
+    @Override
+    public String toString() {
+        return "Vendedor{" +
+                "nome='" + nome + '\'' +
+                ", documento='" + documento + '\'' +
+                ", Endereco=" + Endereco +
+                ", valorSalario=" + valorSalario +
+                ", valorBonificacao=" + valorBonificacao +
+
+                '}';
     }
 }
