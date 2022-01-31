@@ -1,6 +1,6 @@
 package com.company;
 
-public class Vendedor extends FuncionarioCLT{
+public class Vendedor extends FuncionarioCLT implements CalculaBonificacao{
 
 
     private Double valorBonificacao;
@@ -12,6 +12,13 @@ public class Vendedor extends FuncionarioCLT{
     public Vendedor(String nome, String documento, com.company.Endereco endereco, Double valorSalario) {
         super(nome, documento, endereco, valorSalario);
     }
+
+    @Override
+    public void calcBonificacao(Double percentBonifica) {
+       this.valorBonificacao = super.getValorSalario() * percentBonifica;
+    }
+
+
 
     public Double getValorBonificacao() {
         return valorBonificacao;
@@ -32,4 +39,6 @@ public class Vendedor extends FuncionarioCLT{
 
                 '}';
     }
+
+
 }
