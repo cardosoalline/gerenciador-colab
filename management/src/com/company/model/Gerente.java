@@ -1,4 +1,4 @@
-package com.company;
+package com.company.model;
 
 public class Gerente implements CalculaBonificacao {
 
@@ -13,7 +13,7 @@ public class Gerente implements CalculaBonificacao {
     public Gerente() {
     }
 
-    public Gerente(String nome, String documento, com.company.Endereco endereco, Integer horasTrabalhadas, Double valorHora) {
+    public Gerente(String nome, String documento, com.company.model.Endereco endereco, Integer horasTrabalhadas, Double valorHora) {
         this.nome = nome;
         this.documento = documento;
         Endereco = endereco;
@@ -43,11 +43,11 @@ public class Gerente implements CalculaBonificacao {
         this.documento = documento;
     }
 
-    public com.company.Endereco getEndereco() {
+    public com.company.model.Endereco getEndereco() {
         return Endereco;
     }
 
-    public void setEndereco(com.company.Endereco endereco) {
+    public void setEndereco(com.company.model.Endereco endereco) {
         Endereco = endereco;
     }
 

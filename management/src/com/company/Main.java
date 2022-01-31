@@ -1,5 +1,10 @@
 package com.company;
 
+import com.company.model.Endereco;
+import com.company.model.Gerente;
+import com.company.model.OperadorCaixa;
+import com.company.model.Vendedor;
+
 public class Main {
 
     public static void main(String[] args) {

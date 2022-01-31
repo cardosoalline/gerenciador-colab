@@ -1,6 +1,6 @@
-package com.company;
+package com.company.model;
 
-public abstract class  FuncionarioCLT {
+public abstract class FuncionarioCLT {
 
     protected String nome;
     protected String documento;
@@ -14,7 +14,7 @@ public abstract class  FuncionarioCLT {
     public FuncionarioCLT() {
     }
 
-    public FuncionarioCLT(String nome, String documento, com.company.Endereco endereco, Double valorSalario) {
+    public FuncionarioCLT(String nome, String documento, com.company.model.Endereco endereco, Double valorSalario) {
         this.nome = nome;
         this.documento = documento;
         Endereco = endereco;
@@ -37,11 +37,11 @@ public abstract class  FuncionarioCLT {
         this.documento = documento;
     }
 
-    public com.company.Endereco getEndereco() {
+    public com.company.model.Endereco getEndereco() {
         return Endereco;
     }
 
-    public void setEndereco(com.company.Endereco endereco) {
+    public void setEndereco(com.company.model.Endereco endereco) {
         Endereco = endereco;
     }
 

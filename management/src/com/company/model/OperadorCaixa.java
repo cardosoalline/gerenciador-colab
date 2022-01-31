@@ -1,17 +1,17 @@
-package com.company;
+package com.company.model;
 
 public class OperadorCaixa extends FuncionarioCLT {
 
     public OperadorCaixa() {
     }
 
-    public OperadorCaixa(String nome, String documento, com.company.Endereco endereco, Double valorSalario) {
+    public OperadorCaixa(String nome, String documento, com.company.model.Endereco endereco, Double valorSalario) {
         super(nome, documento, endereco, valorSalario);
     }
 
     @Override
     public String toString() {
-        return  "Operador de Caixa {" +
+        return "Operador de Caixa {" +
                 "nome='" + nome + '\'' +
                 ", documento='" + documento + '\'' +
                 ", Endereco=" + Endereco +
