@@ -6,6 +6,15 @@ public class Endereco {
     String complemento;
     String bairro;
 
+    public Endereco() {
+    }
+
+    public Endereco(String rua, String complemento, String bairro) {
+        this.rua = rua;
+        this.complemento = complemento;
+        this.bairro = bairro;
+    }
+
     public String getRua() {
         return rua;
     }
@@ -30,4 +39,12 @@ public class Endereco {
         this.bairro = bairro;
     }
 
+    @Override
+    public String toString() {
+        return "Endereco{" +
+                "rua='" + rua + '\'' +
+                ", complemento='" + complemento + '\'' +
+                ", bairro='" + bairro + '\'' +
+                '}';
+    }
 }
