@@ -3,6 +3,11 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        Vendedor vendedor = new Vendedor();
+        vendedor.setNome("teste");
+
+        System.out.println(vendedor.getNome());
+
     }
 }
